@@ -1,0 +1,169 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#header img {
+  width: 200px;
+}
+#header ul {
+  list-style: none;
+  float: right;
+  padding-top: 40px;
+  padding-right: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+  display: inline;
+  margin: 7px;
+}
+#section1 img {
+  /* border: 2px solid black; */
+  width: 100%;
+}
+#section2 {
+  /* border: 2px solid black; */
+  text-align: center;
+  /* margin: 10px; */
+}
+#section2 h1 {
+  color: rgb(177, 174, 6);
+  font-size: 500%;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 30px;
+}
+#section2 h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 100px;
+  font-weight: lighter;
+  font-size: large;
+}
+
+#section3 {
+  display: table;
+  /* border-spacing: 10px; */
+}
+
+#tableRow {
+  display: table-row;
+}
+
+#RightColumn {
+  /* border: thin solid black; */
+  width: 50%;
+  display: table-cell;
+  /* background: #efe5d0 url(images/background.gif) top left; */
+  /* font-size: 105%; */
+  /* padding: 15px; */
+  vertical-align: top;
+  /* margin: 0px 10px 10px 10px; */
+}
+
+#RightColumn img {
+  width: 600px;
+}
+#LeftColumn {
+  /* border: thin solid black; */
+
+  /* display: table-cell; */
+  /* background: #efe5d0 url(images/background.gif) bottom right; */
+  /* font-size: 105%; */
+  padding: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.9em;
+  vertical-align: top;
+  /* margin: 0px 10px 10px 10px; */
+}
+
+#LeftColumn h1 {
+  color: rgb(177, 174, 6);
+  font-size: 250%;
+}
+
+#section4 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#section4 h1 {
+  text-align: center;
+  color: rgb(7, 7, 87);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card1 {
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  /* position: absolute; */
+  text-align: center;
+  float: left;
+
+  width: 30%;
+  padding: 0px;
+  margin: 40px 10px 10px 20px;
+}
+.card1 img {
+  width: 100%;
+  /* height: 50%; */
+}
+
+.card1 h3 {
+  text-align: center;
+  color: black;
+  position: relative;
+  padding: 7px;
+  font-size: medium;
+  font-weight: lighter;
+  margin-top: -38px;
+}
+
+.card1 h3 {
+  text-align: center;
+  padding: 12px;
+  margin: 7px;
+}
+
+.card1 button {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(177, 174, 6);
+  /* border: 2px solid rgba(221, 173, 13, 0.87); */
+  width: 130px;
+  border-style: none;
+}
+
+#section5 {
+  margin: 700px 10px 10px 10px;
+  text-align: center;
+}
+
+#section5 p {
+  line-height: 3em;
+}
+
+#section6 {
+  margin: 100px 10px 10px 10px;
+  text-align: center;
+}
+#section5 h1 {
+  color: rgb(177, 174, 6);
+  font-size: 300%;
+
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#section6 .image {
+  box-sizing: border-box;
+  /* position: absolute; */
+  text-align: center;
+  float: left;
+  width: 30%;
+  padding: 0px;
+  margin: 40px 10px 100px 30px;
+}
+
+#footer {
+  margin: 100px 10px 10px 10px;
+  text-align: center;
+}
