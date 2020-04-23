@@ -1,0 +1,64 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#header img {
+  width: 200px;
+}
+#header ul {
+  list-style: none;
+  float: right;
+  padding-top: 40px;
+  padding-right: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+  display: inline;
+  margin: 7px;
+}
+
+#firstblog {
+  border: thin solid rgb(120, 120, 177);
+  margin: 70px 150px;
+  text-align: center;
+  padding: 50px;
+}
+
+#firstblog img {
+  width: 700px;
+  height: 550px;
+}
+
+#firstblog h1 {
+  text-align: left;
+  padding: 10px 80px 10px 80px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#firstblog p {
+  text-align: left;
+  padding: 20px 80px 30px 80px;
+  line-height: 1.9em;
+  /* font-weight: lighter; */
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer {
+  /* border: thin solid black; */
+  margin-top: 50px;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+}
+#footer ul {
+  text-align: center;
+}
+
+#footer p {
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px 0px 30px 0px;
+}
