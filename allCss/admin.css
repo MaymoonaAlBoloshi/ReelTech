@@ -1,20 +1,22 @@
 body {
   position: absolute;
-  top: 17%;
+  /* top: 17%; */
   left: 17%;
+  margin: auto;
   /* padding: 80px 200px 80px 200px; */
 }
 
 #TableContainer {
   display: table;
-  /* border-spacing: 10px; */
-  padding: 0px 20px 0px 0px;
   width: 800px;
-  border: thin solid black;
+  /* padding: 0px 20px 0px 0px; */
+  /* margin: 50px 70px; */
+  /* border: thin solid black; */
 }
 
 #tableRow {
   display: table-row;
+  height: 610px;
 }
 
 #LeftColumn {
@@ -30,7 +32,7 @@ body {
 }
 #RightColumn {
   width: 85%;
-  vertical-align: top;
+  vertical-align: middle;
   display: table-cell;
   /* background-color: rgb(245, 230, 201); */
   padding: 15px;
@@ -46,6 +48,7 @@ body {
   bottom: -32px;
   float: right;
   width: 17%;
+  cursor: pointer;
   /* height: 20%; */
   color: white;
   height: 30px;
@@ -91,6 +94,7 @@ body {
   /* flex-direction: top right; */
 }
 .part1 button {
+  cursor: pointer;
   position: relative;
   bottom: -32px;
   float: right;
