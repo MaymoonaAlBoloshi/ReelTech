@@ -1,0 +1,72 @@
+body {
+  position: absolute;
+  top: 17%;
+  left: 20%;
+}
+
+#tableContainer {
+  padding: 0px 20px 0px 0px;
+  display: table;
+  /* border-spacing: 10px; */
+  width: 700px;
+  border: thin solid black;
+}
+
+#tableRow {
+  display: table-row;
+}
+
+#LeftColumn {
+  width: 15%;
+  vertical-align: middle;
+  padding: 10px;
+  color: white;
+  display: table-cell;
+  background-color: rgb(7, 7, 65);
+}
+#LeftColumn h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#RightColumn {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px;
+}
+#RightColumn h2 {
+  padding-left: 13px;
+  color: rgb(7, 7, 65);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#RightColumn input {
+  border-radius: 25px;
+  border-style: none;
+  border: 2px solid rgb(7, 7, 65);
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+}
+
+.description {
+  width: 90%;
+  height: 90px;
+}
+
+.cancelbu {
+  background-color: white;
+  color: rgb(7, 7, 65);
+  border: 2px solid rgb(7, 7, 65);
+  font-size: 120%;
+  float: right;
+  margin: 60px 0px 10px 5px;
+}
+
+.addbu {
+  background-color: rgb(7, 7, 65);
+  color: white;
+  border: 2px solid rgb(7, 7, 65);
+  font-size: 110%;
+  float: right;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 60px 20px 10px 15px;
+}

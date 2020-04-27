@@ -1,0 +1,107 @@
+body {
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  /* padding: 80px 200px 80px 200px; */
+}
+
+#TableContainer {
+  display: table;
+  /* border-spacing: 10px; */
+  padding: 0px 20px 0px 0px;
+  width: 800px;
+  border: thin solid black;
+}
+
+#tableRow {
+  display: table-row;
+}
+
+#LeftColumn {
+  vertical-align: middle;
+  display: table-cell;
+  width: 12%;
+  padding: 10px;
+  background-color: rgb(7, 7, 65);
+}
+#LeftColumn h2 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#RightColumn {
+  width: 85%;
+  vertical-align: top;
+  display: table-cell;
+  /* background-color: rgb(245, 230, 201); */
+  padding: 15px;
+}
+#RightColumn h2 {
+  margin-left: 20px;
+  color: rgb(7, 7, 65);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainbutton {
+  position: relative;
+  right: -10px;
+  bottom: -32px;
+  float: right;
+  width: 17%;
+  /* height: 20%; */
+  color: white;
+  height: 30px;
+  background-color: rgb(7, 7, 65);
+  margin-bottom: 10px;
+  border-style: none;
+  border: 2px solid white;
+}
+
+.part1 {
+  display: flex;
+  background-color: rgb(221, 221, 241);
+  width: 100%;
+  margin: 7px;
+  /* display: inline; */
+  /* margin-right: 0px; */
+  /* float: top right; */
+  padding-right: 0px;
+  margin-right: 40px;
+  /* padding-bottom: -30%; */
+  border: thin solid black;
+}
+/* #part1 span {
+  text-align: right;
+  position: relative;
+  top: -70px;
+} */
+
+.part1 img {
+  /* margin-right: 10px; */
+  width: 130px;
+  height: 100px;
+  /* border: thin solid black; */
+}
+
+.part1 span {
+  line-height: 0.3em;
+  float: right;
+  /* display: inline; */
+  /* display: flex; */
+  padding: 0px 140px 0px 10px;
+  margin-left: 10px;
+  /* flex-direction: top right; */
+}
+.part1 button {
+  position: relative;
+  bottom: -32px;
+  float: right;
+  border-radius: 20px;
+  margin: 5px 0px 0px 10px;
+  border-style: none;
+  width: 14%;
+  color: white;
+  height: 30px;
+  background-color: rgb(7, 7, 65);
+  margin-bottom: 10px;
+  border-style: none;
+  border: thin solid white;
+}
