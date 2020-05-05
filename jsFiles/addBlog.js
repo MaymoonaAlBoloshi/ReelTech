@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
   };
 
+  // send those to json
   const createnewblog = (event) => {
     let newBlog = getData();
 
