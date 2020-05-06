@@ -38,24 +38,36 @@ document.addEventListener("DOMContentLoaded", (event) => {
     date.textContent = blog.date;
     span.appendChild(date);
 
+
     const editButton = document.createElement("button");
     editButton.setAttribute("id", "editBu");
     editButton.textContent = "Edit";
+
+    editButton.addEventListener('click', () =>{
+      console.log("gotoeditpage");
+      window.location.href = '../CMS/editblog.html' + '?blogID=' + blog.id;
+    })
     newDiv.appendChild(editButton);
+    
 
     const deleteButton = document.createElement("button");
     deleteButton.setAttribute("id", "deleteBu");
     deleteButton.textContent = "Delete";
+    deleteButton.addEventListener('click', ()=>{
+      console.log('delete buttons was clicked')
+    })
     newDiv.appendChild(deleteButton);
   };
 
-  const goToEditBlog = (event) => {
-    console.log("gotoeditpage");
-  };
+  // const goToEditBlog = (event) => {
+    // console.log("gotoeditpage");
+    // window.location.href = '../CMS/editblog.html' + '?blogID=' + this.blog.id;
 
-  const deleteBlog = (event) => {
-    console.log("deletepage");
-  };
+  // };
+
+  // const deleteBlog = (event) => {
+    // console.log("deletepage");
+  // };
 
   editBu.forEach((Button) => {
     Button.addEventListener("click", goToEditBlog);
