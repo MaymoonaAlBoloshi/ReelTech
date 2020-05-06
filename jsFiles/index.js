@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const Bloglist = document.querySelector("#blogList");
   const bloglink = document.querySelector("#bloglink");
   const eventlink = document.querySelector("#eventlink");
+  const editBu = document.querySelectorAll("#editBu");
+  const deleteBu = document.querySelectorAll("#deleteBu");
 
   // take data from DB.json
   fetch("http://localhost:3000/blog")
@@ -37,11 +39,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
     span.appendChild(date);
 
     const editButton = document.createElement("button");
+    editButton.setAttribute("id", "editBu");
     editButton.textContent = "Edit";
     newDiv.appendChild(editButton);
 
     const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("id", "deleteBu");
     deleteButton.textContent = "Delete";
     newDiv.appendChild(deleteButton);
   };
+
+  const goToEditBlog = (event) => {
+    console.log("gotoeditpage");
+  };
+
+  const deleteBlog = (event) => {
+    console.log("deletepage");
+  };
+
+  editBu.forEach((Button) => {
+    Button.addEventListener("click", goToEditBlog);
+  });
+
+  deleteBu.forEach((Button) => {
+    Button.addEventListener("click", deleteBlog);
+  });
 });
