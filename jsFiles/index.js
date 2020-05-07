@@ -41,11 +41,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const editButton = document.createElement("button");
     editButton.setAttribute("id", "editBu");
     editButton.textContent = "Edit";
+    editButton.addEventListener("click", goToEditBlog);
     newDiv.appendChild(editButton);
 
     const deleteButton = document.createElement("button");
     deleteButton.setAttribute("id", "deleteBu");
     deleteButton.textContent = "Delete";
+    deleteButton.addEventListener("click", deleteBlog);
     newDiv.appendChild(deleteButton);
   };
 
