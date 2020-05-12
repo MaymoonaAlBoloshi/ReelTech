@@ -84,12 +84,15 @@ li {
 }
 
 #section4 {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   text-align: center;
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #section4 h1 {
+  flex-basis: 100%;
   text-align: center;
   color: rgb(7, 7, 87);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -138,7 +141,7 @@ li {
 }
 
 #section5 {
-  margin: 700px 10px 100px 10px;
+  margin: 70px 10px 70px 10px;
   text-align: center;
   /* border: 2px solid black; */
 }
@@ -154,34 +157,35 @@ li {
 }
 
 #section6 {
-  padding: 0px;
-  /* margin: 0px; */
-  margin-top: 40px;
-  margin-left: 50px;
-  margin-right: 20px;
-
   text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* gap: 10px; */
+  border: 2px solid black;
+  /* padding: 0px; */
+  /* margin: 0px; */
 }
 
 #section6 .image11 {
-  /* border: 2px solid black; */
+  padding: 0px;
+  margin: 40px 15px 10px 20px;
+  border: 2px solid black;
   box-sizing: border-box;
   /* position: relative; */
   text-align: center;
-  float: left;
-
-  /* width: 30%; */
-  padding-right: 0px;
-  padding-bottom: 20px;
-  margin: 20px 10px 10px 30px;
-  /* display: inline; */
+  flex-basis: 30%;
+  width: 250px;
 }
 #section6 h2 {
   padding: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 130%;
   text-align: left;
   margin-top: -100px;
-  margin-left: 20px;
+  padding: 12px;
+  /* margin-left: 20px; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   /* background-color: rgba(7, 95, 172, 0.7); */
@@ -190,7 +194,10 @@ li {
 }
 
 .image11 img {
-  width: 330px;
+  position: relative;
+  z-index: -1;
+  filter: sepia(50%);
+  width: 100%;
   height: 300px;
   text-align: center;
 }

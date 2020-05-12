@@ -52,26 +52,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
     deleteButton.setAttribute("id", "deleteBu");
     deleteButton.textContent = "Delete";
     deleteButton.addEventListener("click", () => {
-      console.log("delete buttons was clicked");
+      return fetch("http://localhost:3000/blog/" + blog.id, {
+        method: "DELETE",
+      });
     });
     newDiv.appendChild(deleteButton);
   };
 
-  // const goToEditBlog = (event) => {
-  // console.log("gotoeditpage");
-  // window.location.href = '../CMS/editblog.html' + '?blogID=' + this.blog.id;
+  //   const goToEditBlog = (event) => {
+  //     console.log("gotoeditpage");
+  //     window.location.href = "../CMS/editblog.html" + "?blogID=" + this.blog.id;
+  //   };
 
-  // };
+  //   const deleteBlog = (event) => {
+  //     console.log("deletepage");
+  //   };
 
-  // const deleteBlog = (event) => {
-  // console.log("deletepage");
-  // };
+  //   editBu.forEach((Button) => {
+  //     Button.addEventListener("click", goToEditBlog);
+  //   });
 
-  editBu.forEach((Button) => {
-    Button.addEventListener("click", goToEditBlog);
-  });
-
-  deleteBu.forEach((Button) => {
-    Button.addEventListener("click", deleteBlog);
-  });
+  //   deleteBu.forEach((Button) => {
+  //     Button.addEventListener("click", deleteBlog);
+  //   });
 });

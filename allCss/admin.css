@@ -1,7 +1,7 @@
 body {
-  position: absolute;
-  /* top: 17%; */
-  left: 17%;
+  position: relative;
+
+  /* left: 17%; */
   margin: auto;
   /* padding: 80px 200px 80px 200px; */
 }
@@ -20,7 +20,7 @@ body {
 }
 
 #LeftColumn {
-  vertical-align: middle;
+  vertical-align: top;
   display: table-cell;
   width: 12%;
   /* margin: auto; */
@@ -28,6 +28,7 @@ body {
   background-color: rgb(7, 7, 65);
 }
 #LeftColumn h2 {
+  cursor: pointer;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
