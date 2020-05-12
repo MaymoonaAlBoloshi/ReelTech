@@ -38,42 +38,41 @@ document.addEventListener("DOMContentLoaded", (event) => {
     date.textContent = blog.date;
     span.appendChild(date);
 
-
     const editButton = document.createElement("button");
     editButton.setAttribute("id", "editBu");
     editButton.textContent = "Edit";
 
-    editButton.addEventListener('click', () =>{
+    editButton.addEventListener("click", () => {
       console.log("gotoeditpage");
-      window.location.href = '../CMS/editblog.html' + '?blogID=' + blog.id;
-    })
+      window.location.href = "../CMS/editblog.html" + "?blogID=" + blog.id;
+    });
     newDiv.appendChild(editButton);
-    
 
     const deleteButton = document.createElement("button");
     deleteButton.setAttribute("id", "deleteBu");
     deleteButton.textContent = "Delete";
-    deleteButton.addEventListener('click', ()=>{
-      console.log('delete buttons was clicked')
-    })
+    deleteButton.addEventListener("click", () => {
+      return fetch("http://localhost:3000/blog/" + blog.id, {
+        method: "DELETE",
+      });
+    });
     newDiv.appendChild(deleteButton);
   };
 
-  // const goToEditBlog = (event) => {
-    // console.log("gotoeditpage");
-    // window.location.href = '../CMS/editblog.html' + '?blogID=' + this.blog.id;
+  //   const goToEditBlog = (event) => {
+  //     console.log("gotoeditpage");
+  //     window.location.href = "../CMS/editblog.html" + "?blogID=" + this.blog.id;
+  //   };
 
-  // };
+  //   const deleteBlog = (event) => {
+  //     console.log("deletepage");
+  //   };
 
-  // const deleteBlog = (event) => {
-    // console.log("deletepage");
-  // };
+  //   editBu.forEach((Button) => {
+  //     Button.addEventListener("click", goToEditBlog);
+  //   });
 
-  editBu.forEach((Button) => {
-    Button.addEventListener("click", goToEditBlog);
-  });
-
-  deleteBu.forEach((Button) => {
-    Button.addEventListener("click", deleteBlog);
-  });
+  //   deleteBu.forEach((Button) => {
+  //     Button.addEventListener("click", deleteBlog);
+  //   });
 });
