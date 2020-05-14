@@ -84,7 +84,7 @@ li {
 }
 
 #section4 {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   text-align: center;
   margin-top: 40px;
   display: flex;
@@ -163,7 +163,7 @@ li {
   flex-wrap: wrap;
 
   /* gap: 10px; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   /* padding: 0px; */
   /* margin: 0px; */
 }
@@ -171,7 +171,7 @@ li {
 #section6 .image11 {
   padding: 0px;
   margin: 40px 15px 10px 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   box-sizing: border-box;
   /* position: relative; */
   text-align: center;
