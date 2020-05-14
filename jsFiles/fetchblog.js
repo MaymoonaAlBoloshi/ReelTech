@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const img = document.querySelector(".Img");
   const title = document.querySelector(".Title");
 
-  fetch("http://localhost:3000/blog")
+  fetch("http://localhost:3000/blog?_limit=3")
     .then((response) => response.json())
     .then((blog) => blog.forEach(pastInDiv));
 

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("edit page loaded");
+  console.log("update page loaded");
 
   const title = document.querySelector(".Title");
   const des = document.querySelector(".Dess");
@@ -11,19 +11,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
   //?BlogId = id
   const urlParams = new URLSearchParams(queryString);
 
-  const id = urlParams.get("blogID");
+  const id = urlParams.get("eventID");
   console.log(id);
 
-  fetch("http://localhost:3000/blog/" + id)
+  fetch("http://localhost:3000/event/" + id)
     .then((response) => response.json())
-    .then((blog) => addToInput(blog));
+    .then((event) => addToInput(event));
 
-  const addToInput = (blog) => {
-    console.log("hello world " + blog.title);
+  const addToInput = (event) => {
+    console.log("hello world " + event.title);
 
-    title.value = blog.title;
-    des.value = blog.des;
-    img.value = blog.img;
+    title.value = event.title;
+    des.value = event.des;
+    img.value = event.img;
   };
 
   const getData = () => {
@@ -43,23 +43,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
   };
 
-  const updateBlog = (event) => {
-    let newBlogUpdate = getData();
+  const updateEvent = (event) => {
+    let newEventUpdate = getData();
 
-    return fetch("http://localhost:3000/blog/" + id, {
+    return fetch("http://localhost:3000/event/" + id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      body: JSON.stringify(newBlogUpdate),
+      body: JSON.stringify(newEventUpdate),
     });
   };
 
   backBu.addEventListener("click", () => {
     console.log("gotoeditpage");
-    window.location.href = "../CMS/blogs.html";
+    window.location.href = "../CMS/events.html";
   });
 
-  editBu.addEventListener("click", updateBlog);
+  editBu.addEventListener("click", updateEvent);
 });

@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const BlogLink = document.querySelector("#bloglink");
   const EventLink = document.querySelector("#blogevent");
   const eventlist = document.querySelector("#eventList");
+  const updateBu = document.querySelectorAll("#editBu");
+  const backBu = document.querySelectorAll("#deleteBu");
 
   // take data from DB.json
   fetch("http://localhost:3000/event")
@@ -40,8 +42,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
     editButton.textContent = "Edit";
     newDiv.appendChild(editButton);
 
+    editButton.addEventListener("click", () => {
+      console.log("gotoeditpage");
+      window.location.href = "../CMS/editevent.html" + "?eventID=" + event.id;
+    });
+    newDiv.appendChild(editButton);
+
     const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("id", "deleteBu");
     deleteButton.textContent = "Delete";
+    deleteButton.addEventListener("click", () => {
+      return fetch("http://localhost:3000/event/" + event.id, {
+        method: "DELETE",
+      });
+    });
     newDiv.appendChild(deleteButton);
   };
 });

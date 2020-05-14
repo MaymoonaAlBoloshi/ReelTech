@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const time = document.querySelector(".Time");
   const RsBu = document.querySelector(".RSbu");
 
-  fetch("http://localhost:3000/event")
+  fetch("http://localhost:3000/event?_limit=3")
     .then((response) => response.json())
     .then((event) => event.forEach(pastInDiv));
 
