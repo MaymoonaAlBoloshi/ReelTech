@@ -7,6 +7,7 @@ body {
   width: 200px;
 }
 #header ul {
+  /* position: absolute; */
   list-style: none;
   float: right;
   padding-top: 40px;
@@ -17,7 +18,20 @@ li {
   display: inline;
   margin: 7px;
   cursor: pointer;
+  font-size: large;
 }
+
+a:link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
 #section1 img {
   /* border: 2px solid black; */
   width: 100%;

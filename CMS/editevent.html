@@ -14,9 +14,30 @@
         </div>
         <div id="RightColumn">
           <h2>Event</h2>
-          <input class="Title" type="title" placeholder="Title" />
-          <input class="Dess" type="Des" placeholder="Event description... " />
-          <input class="Img" type="img" placeholder="Image URL" />
+          <input
+            class="Title"
+            type="title"
+            placeholder="Title"
+            required
+            minlength="3"
+            maxlength="50"
+          />
+          <input
+            class="Dess"
+            type="Des"
+            placeholder="Event description... "
+            required
+            minlength="3"
+            maxlength="100"
+          />
+          <input
+            class="Img"
+            type="img"
+            placeholder="Image URL"
+            required
+            minlength="3"
+            maxlength="100"
+          />
           <button class="editbu">Update</button>
           <button class="backbu">Back</button>
         </div>
