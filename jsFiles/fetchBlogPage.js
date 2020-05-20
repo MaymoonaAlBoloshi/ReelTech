@@ -40,18 +40,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const title = document.createElement("h1");
 
     title.addEventListener("click", () => {
-      console.log("gotoeditpage");
-      window.location.href = "../firstblog.html";
-
-      title.classList.add("Title");
-      title.textContent = blog.title;
-      Rightcolum.appendChild(title);
+      console.log(blog.id);
+      window.location.href = "../firstblog.html" + "?blogID=" + blog.id;
     });
+
+    title.classList.add("Title");
+    title.textContent = blog.title;
+    Rightcolum.appendChild(title);
 
     const paragraph = document.createElement("p");
     paragraph.classList.add("Para");
     // blog.paragraph frtch from Json.. so the name should be same in JSON!
-    paragraph.textContent = blog.des;
+    paragraph.textContent = blog.des.slice(0, 100) + "...";
+    // to cut the long paragraph from 0 to 40 letters!
+
     Rightcolum.appendChild(paragraph);
   };
 });

@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     span.appendChild(title);
 
     const des = document.createElement("p");
-    des.textContent = blog.des;
+    // console.log(blog.des.slice(0, 50));
+    // to cut the long paragraph from 0 to 40 letters!
+    des.textContent = blog.des.slice(0, 40) + "...";
     span.appendChild(des);
 
     const date = document.createElement("h5");
@@ -46,6 +48,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       console.log("gotoeditpage");
       window.location.href = "../CMS/editblog.html" + "?blogID=" + blog.id;
     });
+
     newDiv.appendChild(editButton);
 
     const deleteButton = document.createElement("button");
